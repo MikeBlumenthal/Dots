@@ -1,49 +1,81 @@
 .box{
   background-color: green;
 }
+
 .wrapper {
-  width: 500px;
+  width: 1000px;
   height: 500px;
   display: grid;
-  grid-template-columns: 50px auto 50px;
+  grid-template-columns: 50px auto 50px auto 50px;
   grid-template-rows: 50px auto 50px;
 }
-.one {
+.a1 {
   grid-column: 1;
   grid-row: 1;
 }
-.two {
+.a2 {
   grid-column: 2;
   grid-row: 1;
 }
-.three {
+.a3 {
   grid-column: 3;
   grid-row: 1;
 }
-.four {
+.a4 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.a5 {
+  grid-column: 5;
+  grid-row: 1;
+}
+.b1 {
   grid-column: 1;
   grid-row: 2;
 }
-.five {
+.b2 {
   grid-column: 2;
   grid-row: 2;
 }
-.six {
+.b3 {
   grid-column: 3;
   grid-row: 2;
 }
-.seven {
+.b4 {
+  grid-column: 4;
+  grid-row: 2;
+}
+.b5 {
+  grid-column: 5;
+  grid-row: 2;
+}
+.c1{
   grid-column: 1;
   grid-row: 3;
 }
-.eight {
+.c2{
   grid-column: 2;
   grid-row: 3;
 }
-.nine {
+.c3{
   grid-column: 3;
   grid-row: 3;
 }
+.c4{
+  grid-column: 4;
+  grid-row: 3;
+}
+.c5{
+  grid-column: 5;
+  grid-row: 3;
+}
+
+
+
+
 .clicked{
   background-color: red;
+}
+.unclicked{
+  background-color: green;
 }

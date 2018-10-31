@@ -1,22 +1,20 @@
 import React from 'react';
 
 class Line extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      clicked: null
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
 
-  handleClick(){
-    console.log("click");
-    this.setState({clicked: "clicked"});
+  getSelf(queryID){
+    return this.props.data.gameState.find( obj => obj.id === queryID);
   }
 
   render() {
+    // const id = this.props.className;
+    // const self = this.getSelf(id);
+    // console.log(self);
+
     return (
-      <div onClick={this.handleClick} className={this.state.clicked}>
+
+      <div onClick={this.props.clickLine} id={this.props.className}>
+
       </div>
     )
   }
