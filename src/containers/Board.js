@@ -6,7 +6,7 @@ import Line from '../components/Line';
 class Board extends React.Component {
   constructor(props){
     super(props);
-    this.state = [];
+    this.state = null;
   }
   render(){
     return(
